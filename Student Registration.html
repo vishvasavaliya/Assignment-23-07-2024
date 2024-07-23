@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <center>
+        <h2>Registration</h2>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <h4>Personal Details</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">
+                            <p>Full Name</p>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2" maxlength="50">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="fName">
+                            <p>Father Name</p>
+                            <input type="text" id="fName" name="fName" placeholder="Enter father name" required minlength="2" maxlength="50">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="mName">
+                            <p>Mother Name</p>
+                            <input type="text" id="mName" name="mName" placeholder="Enter mother name" required minlength="2" maxlength="50">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="DOB">
+                            <p>Date of Birth</p>
+                            <input type="date" id="DOB" name="DOB" placeholder="Enter your DOB" required>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="aadharNo">
+                            <p>Aadhar Number</p>
+                            <input type="text" id="aadharNo" name="aadharNo" placeholder="Enter aadhar number" required pattern="\d{12}" title="Aadhar number should be 12 digits">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="email">
+                            <p>Email</p>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ph">
+                            <p>Mobile Number</p>
+                            <input type="tel" id="ph" name="phone" placeholder="Enter mobile number" required pattern="\d{10}" title="Mobile number should be 10 digits">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="gender">
+                            <p>Gender</p>
+                            <input type="text" id="gender" name="gender" placeholder="Enter your gender" required>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="address">
+                            <p>Address</p>
+                            <input type="text" id="address" name="address" placeholder="Enter your Address" required>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>
+                        <h4>Other Details</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="stream">
+                            <p>Stream</p>
+                            <input type="text" id="stream" name="stream" placeholder="Enter your stream" required>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="previousClass">
+                            <p>Previous Class</p>
+                            <input type="text" id="previousClass" name="previousClass" placeholder="Enter previous class" required>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="hobbies">
+                            <p>Hobbies</p>
+                            <input type="text" id="hobbies" name="hobbies" placeholder="Enter your hobbies" required>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="accNo">
+                            <p>Account Number</p>
+                            <input type="text" id="accNo" name="accNo" placeholder="Enter account number" required pattern="\d{10,12}" title="Account number should be between 10 and 12 digits">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="religion">
+                            <p>Religion</p>
+                            <input type="text" id="religion" name="religion" placeholder="Enter your religion" required>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="category">
+                            <p>Category</p>
+                            <input type="text" id="category" name="category" placeholder="Enter your category" required>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+</body>
+
+</html>
